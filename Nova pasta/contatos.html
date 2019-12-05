@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="refresh" content="30">
+
+  <title>TransJobs</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&display=swap">
+  <!-- Custom styles for this template -->
+  <link href="css/full-width-pics.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
+<style>
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+a, h4{
+  font-family: "bungee inline";
+}
+a:link, a:active, a:visited{
+    color: #ffbb00;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* GRID 960px */
+.linha{
+    width:960px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 10px 0px;
+}
+.coluna{
+    padding: 0 10px;
+    float: left;
+}
+.col1{
+    width: 60px;
+}
+.col2{
+    width: 140px;
+}
+.col3{
+    width: 220px;
+}
+.col4{
+    width: 300px;
+}
+.col5{
+    width: 380px;
+}
+.col6{
+    width: 460px;
+}
+.col7{
+    width: 540px;
+}
+.col8{
+    width: 620px;
+}
+.col9{
+    width: 700px;
+}
+.col10{
+    width: 780px;
+}
+.col11{
+    width: 860px;
+}
+.col12{
+    width: 940px;
+    text-align: center;
+    float: inline-flex;
+}
+/*ESTILOS REUTILIZÁVEIS */
+.sem-padding{
+    padding: 0 !important;
+}
+.sem-margin{
+    margin: 0 !important;
+}
+h1, h2, h3 ,h4, h5, h6{
+    font-weight: 500;
+    margin: 15px 0 10px 0;
+}
+ul li, ol li{
+    margin-bottom: 5px;
+}
+ul.inline li, ol.inline li{
+    display: inline;
+    margin-right: 15px;
+}
+ul.inline li:last-child, ol.inline li:last-child{
+    margin-right: 0px;
+}
+ul.sem-marcador, ol.sem-marcador{
+    list-style: none;
+}
+a.botao, input.botao{
+    background: #1f3c58;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #f1f1f1;
+    cursor: pointer;
+    margin: 5px 0;
+    display: inline-block;
+    border: none;
+}
+a.botao:hover, input.botao:hover{
+    background: #315e8a;
+    text-decoration: none;
+}
+/*img{
+    max-width: 80%;
+    height: auto;
+}*/
+.responsive {
+    padding: 0 6px;
+    float: flex;
+    max-width: 100%;
+  }
+  
+ @media only screen and (max-width: 700px) {
+    .responsive {
+        max-width: 49.99999%;
+        margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 350px) {
+    .responsive {
+        max-width: 49.99999%;
+    }
+  }
+
+  @media only screen and (max-width: 120px) {
+    .responsive {
+        max-width: 49.99999%;
+        float: flex;
+    }
+  }
+ /* 
+clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }/*
+@@@@@@@@@@@ Outro código
+.responsive{
+    padding: 0 6px;
+    float: inherit;
+    width: 100%;
+}
+  @media only screen and (max-width: 200px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  @media only screen and (max-width: 100px) {
+    .responsive {
+      width: 100%;
+    }
+}
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+/* LAYOUT DO SITE */
+.header{
+    background: #dee3e6;
+}
+h1.logo{
+    font-weight: 300;
+    color: #315ea8;
+    letter-spacing: -2px;
+}
+.conteudo-extra{
+    background:#f1f2ea;
+}
+
+.menu{
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 25px;
+}
+.menu li a{
+    padding: 5px 10ps;
+    border-radius: 3px;
+}
+.menu li a:hover{
+    text-decoration: none;
+    background: #1f3c58;
+    color: ebebeb;
+}
+ul.noticias li{
+    clear: both;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20%;
+}
+ul.noticias li img{
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+    float: left;
+}
+ul.noticias li h4{
+    margin: -2px 0 5px 0;
+    font-weight: 500;
+}
+ul.noticias li p{
+    margin: 5xp 0;
+    font-weight: 300;
+}
+ul.noticias li p a{
+    font-weight: 500;
+}
+.contato label{
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+}
+.contato input, .contato textarea{
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px 2%;
+    width: 96%;
+}
+.contato textarea{
+    height: 150px; 
+}
+.contato input.botao{
+    width: auto;
+}
+
+</style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top">Contatos TransJobs</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="index.html">
+                  <button class="btn btn-outline-warning" type="button" data-toggle="collapse" role="button" data-target="#navbarResponsive" aria-pressed="true" aria-label="Toggle navigation">Inicio</button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">
+              <button class="btn btn-outline-warning" type="button" data-toggle="collapse" role="button" data-target=".htmlnavbarResponsive" aria-pressed="true" aria-label="Toggle navigation">Sobre</button>
+            </a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contatos.html">
+              <button class="btn btn-outline-warning" type="button" data-toggle="collapse" role="button" data-target="#navbarResponsive" aria-pressed="true" aria-label="Toggle navigation">Contatos</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="linha">
+        <section><br>
+                <h3>Localização</h3>
+                <img src="../startbootstrap-full-width-pics-gh-pages/css/mapa.JPG" alt="" background="red">
+            <div class="coluna col6 sidebar">
+                <ul class="inline">
+                    <li>Rua Aymorés, 1451</li>
+                    <li>Lourdes</li>                  
+                    <li>Belo Horizonte - MG</li>       
+                </ul>
+                <h3>Alunos</h3>
+                <ul>
+                    <li><strong>Nome:&nbsp;&nbsp;</strong>Tiago Oliveira da Silva</li>
+                    <li><strong>R.A:&nbsp;&nbsp;</strong></li>
+                    <li><strong>Nome:&nbsp;&nbsp;</strong>Lourenço Lage</strong></li>
+                    <li><strong>R.A:&nbsp;&nbsp;</strong>contato@roquinho.com</strong></li>
+                    <li><strong>Nome:&nbsp;&nbsp;</strong>Osvaldo Rodrigues de Oliveira Souza</strong></li>
+                    <li><strong>R.A:&nbsp;&nbsp;</strong>319227480</strong></li>
+                </ul>
+                <ul>
+                        <li><strong>Orientador:&nbsp;&nbsp;</strong>Julio Vilela da Silva Neto</strong></li>
+                </ul>
+            </div>
+            <div id="area"></div><br>
+            <form id="formulario" autocomplete="on">
+                <fieldset>
+                <h3>Envie sua mensagem</h3>
+                <form action="">
+                    <label for="nome"><em>Seu nome:&nbsp;</em></label>
+                    <input type="text" name="nome" id="nome"><br>
+                    <label for="email"><em>Seu e-mail:&nbsp;</em></label>
+                    <input type="text" name="email" id="email"><br>
+                    <label for="assunto"><em>Assunto:&nbsp;</em></label>
+                    &nbsp; &nbsp;&nbsp;&nbsp;<input type="text" name="assunto" id="assunto"><br>
+                    <label><em>Mensagem:&nbsp;</em></label><br>
+                    <textarea name="mensagem" id="mensagem"></textarea><br>
+                    <input type="submit" class="botao"  name="enviar" value="Enviar mensagem &raquo;">
+                </form>
+            </div>
+
+            <br>
+            
+        </section>
+    </div> 
+  <!-- Footer -->
+  <footer class="py-3 bg-danger">
+    <div class="container">
+      <p class="m-0 text-center text-warning">Copyright &copy;  2019 - Projeto de Lai</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
